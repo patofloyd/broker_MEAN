@@ -1,0 +1,14 @@
+{
+  "name": "angularAppbase",
+  "version": "0.0.1",
+  "dependencies": {
+    "cookie-parser": "*",
+    "debug": "*",
+    "gulp": "*",
+    "gulp-less": "*",
+    "mongo-express": "*",
+    "nodemon": "^1.9.1",
+    "serve-favicon": "*",
+    "mongresto":"*"
+  }
+}

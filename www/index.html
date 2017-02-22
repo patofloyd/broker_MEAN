@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <title>DYHR & RUMSON</title>
+    <meta charset="utf-8">
+    <!-- base href for Angular (HTML5 mode) -->
+    <base href="/">
+    <!-- meta tag for bootstrap (mobile devices) -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" 
+      type="image/ico" 
+      href="/imgs/fav/favicon.ico" />
+    <!-- APIs -->
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCvNqSM9RevYUHAqxSOnEsmdAjasyYBb8c"></script>
+
+    <!-- JS libs -->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-touch.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <script src="libs/angular-resource.min.js"></script>
+    <script src="libs/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.5/i18n/angular-locale_sv-se.js"></script>
+    <script src='/libs/lodash.js'></script>
+    <script src='/libs/angular-simple-logger.js'></script>
+    <script src='/libs/angular-google-maps.min.js'></script>
+    <script src='/libs/ng-alertify.js'></script>
+
+
+
+    
+    <!-- our JS -->
+    <script src="app.js"></script>
+    <script src="/api/ngresources/app"></script>
+    <script src="controllers/seller.js"></script>
+    <script src="controllers/testHomes.js"></script>
+    
+    <script src="controllers/about.js"></script>
+    
+    <!-- directives -->
+    <script src="/directives/headerNav.js"></script>
+    <script src="/directives/footerSticky.js"></script>
+    <script src="/directives/headerCarousel.js"></script>
+    <script src="/directives/homeSearch.js"></script>
+    <script src="/directives/aboutTabs.js"></script>
+    <script src="/directives/subNavObject.js"></script>
+    <script src="/directives/buttonDirectives.js"></script>
+
+    <script src="/directives/objects/objektShow.js"></script>
+    <script src="/directives/objects/villorShow.js"></script>
+    <script src="/directives/objects/lagenheterShow.js"></script>
+    <script src="/directives/objects/pagination.js"></script>
+    <script src="/directives/objects/fyrafyra.js"></script>
+    <script src="/directives/objects/contactForm.js"></script>
+
+    <script src="/directives/myModalSeller.js"></script>
+
+    <script src="/directives/detailedObject/myCarousel.js"></script>
+    <script src="/directives/detailedObject/enfastInfo.js"></script>
+    <script src="/directives/detailedObject/myMap.js"></script>
+
+    <script src="/directives/dbInsertion/insertSeller.js"></script>
+    <script src="/directives/dbInsertion/insertObject.js"></script>
+    <script src="/directives/dbInsertion/insertAbout.js"></script>
+    
+    <!-- our modal controller is special -->
+    <script src="/modals/mySellerModalInstance.js"></script>
+
+    <!-- all CSS -->
+    <link rel="stylesheet" type="text/css" href="libs/jquery-ui-1.11.4/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="libs/ng-alertify.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom-scrollbar.css">
+    
+  </head>
+    
+  <body>
+    
+    <div id="wrapper">
+    
+            <header-nav></header-nav>
+            <header-carousel></header-carousel>
+        
+        <div class="container ng-scope">
+        
+            <ng-view> </ng-view>
+            <insert-about></insert-about>
+            <insert-seller></insert-seller> 
+            <insert-object></insert-object>
+
+        </div>
+      
+        <footer>
+
+            <footer-sticky></footer-sticky>
+        
+        </footer>
+        
+    </div>
+      
+    </body>
+
+</html>
+       

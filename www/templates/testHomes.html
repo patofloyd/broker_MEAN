@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+  <div class="col-xs-12 col-md-24"> 
+		<div class="pull-right">
+			<button type="submit" class="btn btn-primary" ng-click="minToMax()"><span class="fa fa-sort-desc" aria-hidden="true"></span> minsta pris</button>
+			<button type="submit" class="btn btn-primary" ng-click="maxToMin()"><span class="fa fa-sort-asc" aria-hidden="true"></span> högsta pris</button>
+		</div>
+		<div class="pull-left">
+			<home-search></home-search>  
+  	</div>	
+	</div>
+</div>
+
+  <div class="row"> 
+    <div class="col-xs-24 col-md-12" ng-repeat="info in results"> 
+      <div class="imglist">
+        <a ng-href="/objekt/{{info._id}}">
+          <img src="{{info.img[0].url}}" class="img-responsive" alt="{{info.img[0].name}}"/>
+            <div class="textOver" class="img-responsive" id="show-info">
+              <h3>{{info.address}}
+              <small>{{info.price | currency: "KR" : 0 }}</small></h3>
+            </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>  
+

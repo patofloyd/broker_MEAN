@@ -1,0 +1,31 @@
+<uib-tabset active="activeJustified" justified="true" class="info-tabs">
+    <uib-tab index="0" heading="Beskrivning">
+  		<div>
+			<h2><small>{{info.description}}</small></h2><br>
+		</div>
+    </uib-tab>
+    <uib-tab index="1" heading="Detaljerad information">
+  		<div>
+			<h2>Adress: <small>{{info.address}}</small></h2><br>
+			<h2>Område: <small>{{info.area}}</small></h2><br>
+			<h2>Objekttyp: <small>{{info.type}}</small></h2><br>
+			<h2>Boarea: <small>{{info.size}}</small></h2><br>
+			<h2>Rum: <small>{{info.rooms}}</small></h2><br>
+			<h2>Toaletter: <small>{{info.toilets}}</small></h2><br>
+			<h2>Trädgård: <small>{{info.garden}}</small></h2><br>
+			<h2>Balkong/Uteplats: <small>{{info.balcony}}</small></h2><br>
+			<h2>Pris: <small>{{info.price | currency: "KR" : 0}}</small></h2><br>
+			<h2>Säljare: <small>{{info.seller.name}}</small></h2><br>
+		</div>
+    </uib-tab>
+    <uib-tab index="3" heading="Visningar">
+  		<div>
+			<h2>
+				<small>
+					<span class="glyphicon glyphicon-time"></span>
+					{{info.show}}
+				</small>
+			</h2>
+		</div>
+    </uib-tab>
+</uib-tabset>

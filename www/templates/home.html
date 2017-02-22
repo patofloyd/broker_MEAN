@@ -1,0 +1,28 @@
+<div class="container hej">
+  <div class="col-md-12">
+    <div class="well well-lg" id="searchForm" name="searchForm" role="search" method="get">
+        <h2>Hitta din bostad!</h2>
+		    <home-search></home-search>
+    </div>
+  </div>
+  <!-- Dropdown -->
+  <div class="col-md-12">
+    <div class="well well-lg" id="ddown">
+      <h2>Navigera!</h2>
+        <!-- Single button -->
+        <div class="btn-group" uib-dropdown is-open="status.isopen">
+          <button id="single-button" type="button" class="btn btn-primary dropdown-toggle minSize" uib-dropdown-toggle ng-disabled="disabled">Köp/Sälj!
+          </button>
+          <ul class="dropdown-menu-1" uib-dropdown-menu role="menu">
+            <li><a class="kopa" ng-href="/fastigheter"><center>Se våra bostäder!</center></a></li>
+            <li class="dropdown-header"><center>eller</center></li>
+            <li><a class="kopa" ng-href="/maklare"><center>Kontakta våra mäklare!</center></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</div>
+
+
+ 
