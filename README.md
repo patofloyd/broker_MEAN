@@ -1,3 +1,4 @@
+(This was a front-end oriented project that I and four classmates did in school during the spring of 2016)
 
 # macklare
 Dyhr & Rumson mäklarfirma
