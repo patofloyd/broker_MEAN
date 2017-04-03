@@ -13,8 +13,8 @@ This is the original repository "https://github.com/webcrunch/macklare"
 - After all modules are installed, you are able to run "node app" in the same directory through the terminal as well.
 - Now you can open your browser and go to localhost:3000 
 
-# Readme of the original repository
-# macklare
+
+# macklare (Readme of the original repository)
 Dyhr & Rumson mäklarfirma
 
 innehåller script för dummy data som laddas en gång när sidan öppnas för första gången. Uppdatera inte sidan under de första få sekunderna så scriptet hinner köra klart. Appen använder databasnamnet "broker".
