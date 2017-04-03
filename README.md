@@ -3,7 +3,7 @@ The project was done using the MEAN stack (Mongo Db, Express, Angular and NodeJs
 
 This is the original repository "https://github.com/webcrunch/macklare"
 
-#Start the project
+# Start the project
 
 Node JS and MongoDB should be already installed in your computer. If it's not, install Node JS and MongoDB.
 Run your mongo database (you can do it through your terminal and run "mongod" without the double quotes).
